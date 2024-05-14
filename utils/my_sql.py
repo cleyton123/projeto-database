@@ -4,7 +4,7 @@ from mysql.connector.abstracts import MySQLConnectionAbstract
 from utils.funcoes import cria_sub_dicionario, read_csv_to_dict
 from utils import EXCEPT_FILL_DB_BY_CSV, SOURECES_TABLES
 from models.Show import Show
-
+import os
 
 def conect_to_db() -> PooledMySQLConnection | MySQLConnectionAbstract:
     """Conecta com o banco de dados.
@@ -12,7 +12,7 @@ def conect_to_db() -> PooledMySQLConnection | MySQLConnectionAbstract:
     Returns:
         PooledMySQLConnection | MySQLConnectionAbstract: instancia da conexão com o banco de dados.
     """
-    import os
+   
     from dotenv import load_dotenv
 
     load_dotenv()
@@ -65,7 +65,7 @@ def insert_into_source_tbl(path: str, fonte: dict) -> None:
         script (str): Script que será executado.
     """
     separator = "\\" if os.name == "nt" else "/"
-    table_name = path.split(separator)[2]
+    table_name = path.split(separator)[1]
     table_name = table_name[0 : len(table_name) - 4]
     table_name = table_name + "_tbl"
     data = cria_sub_dicionario(path, fonte)

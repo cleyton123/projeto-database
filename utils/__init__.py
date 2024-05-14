@@ -1,6 +1,6 @@
 UTF8 = "utf_8"
-#CSV_PATH = "database/teste_data2.csv"
-CSV_PATH = "database/netflix_titles.csv"
+CSV_PATH = "database/exemploreduzido.csv"
+#CSV_PATH = "database/netflix_titles.csv"
 EXCEPT_FILL_DB_BY_CSV = ("release_year", "date_added", "duration")
 EXCEPT_UNIQUE_VALUES = ("date_added", "description")
 EXCEPT_CAPITAL_INITIALS = ("rating", "duration", "description")

@@ -1,0 +1,1 @@
+INSERT INTO `show_listed_in_tbl` (id_show, id_listed_in) VALUES (1, 16);

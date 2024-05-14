@@ -1,5 +1,5 @@
 DROP DATABASE `projeto_database_db`;
-CREATE DATABASE IF NOT EXISTS `projeto_database_db` DEFAULT CHARACTER SET utf8mb4 COLLATE 'utf8mb4_general_ci';
+CREATE DATABASE IF NOT EXISTS `projeto_database_db`;
 -- ****
 -- Seguir a seguinte ordem de criação das tabelas:
 -- 1-) Criar tabela type_tbl:

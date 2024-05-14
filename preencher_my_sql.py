@@ -9,12 +9,12 @@ from utils import CSV_PATH, EXCEPT_UNIQUE_VALUES, EXCEPT_CAPITAL_INITIALS
 
 inicio = time.time()
 PATHS_TUPLE = (
-    "normalizado/type.csv",
-    "normalizado/rating.csv",
-    "normalizado/director.csv",
-    "colocar_na_1FN/cast.csv",
-    "colocar_na_1FN/country.csv",
-    "colocar_na_1FN/listed_in.csv",
+    "normalizado\\type.csv",
+    "normalizado\\rating.csv",
+    "normalizado\\director.csv",
+    "colocar_na_1FN\\cast.csv",
+    "colocar_na_1FN\\country.csv",
+    "colocar_na_1FN\\listed_in.csv",
 )
 
 df = trata_data_frame(CSV_PATH, EXCEPT_CAPITAL_INITIALS)
